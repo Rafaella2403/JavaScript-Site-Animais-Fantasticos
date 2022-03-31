@@ -1,0 +1,51 @@
+.introducao-animais-descricao{
+    grid-column: 3;
+}
+
+.introducao-animais-descricao section{
+    margin-bottom: 3rem;
+}
+
+.introducao-animais-subtitulo{
+    font-family: monospace;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    color: #E54;
+}
+
+.introducao-animais-subtitulo::before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    margin-right: 10px;
+    background: #FB5;
+}
+
+.introducao-animais-descricao p{
+    font-family: Arial, Helvetica;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.introducao-animais-lista{
+    height: 370px;
+    overflow-y: scroll;
+    grid-column: 2;
+}
+
+.introducao-animais-lista::-webkit-scrollbar{
+    width: 18px;
+}
+
+.introducao-animais-lista::-webkit-scrollbar-thumb{
+    background: #FB5;
+    border-left: 4px solid #FAF6ED;
+    border-right: 4px solid #FAF6ED; 
+}
+
+.introducao-animais-lista::-webkit-scrollbar-track{
+    background: #FAF6ED;
+}
