@@ -49,3 +49,11 @@
 .introducao-animais-lista::-webkit-scrollbar-track{
     background: #FAF6ED;
 }
+
+@media(max-width: 700px){
+
+    .introducao-animais-lista{
+        grid-column: 1;
+    }
+    
+}

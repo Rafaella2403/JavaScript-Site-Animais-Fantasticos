@@ -54,3 +54,16 @@ body{
     margin-bottom: 1rem;
     grid-column: 1 / 4;
 }
+
+@media(max-width: 700px){
+
+    body{
+        grid-template-columns: 1fr;
+    }
+
+    .grid-section{
+        grid-column: 1;
+        grid-template-columns: 100px 1fr;
+        grid-gap: 10px;
+    }
+}

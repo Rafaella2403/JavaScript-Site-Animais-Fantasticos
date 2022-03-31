@@ -19,3 +19,11 @@
     margin-right: 10px;
     background: #FB5;
 }
+
+@media(max-width: 700px){
+
+    .contato-dados, .contato-mapa{
+        grid-column: 1 / 3;
+    }
+    
+}

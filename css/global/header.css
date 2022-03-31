@@ -23,3 +23,11 @@
     letter-spacing: 0.1rem
 }
 
+@media(max-width: 700px){
+
+    .header-menu{
+        grid-column: 1;
+        margin-top: 0px;
+    }
+    
+}
