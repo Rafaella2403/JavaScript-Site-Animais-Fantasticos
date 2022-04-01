@@ -1,0 +1,72 @@
+/*//UTILIZANDO FOREACH
+
+const imagensSite = document.querySelectorAll('img');
+console.log(imagensSite);
+
+//item = item que esta rodando no loop
+//index = posição do item selecionado
+//array = array que o foreach esta passando
+
+imagensSite.forEach(function(item, index, array){
+    //console.log(item, index, array)
+});
+
+//Transformando um array like em um array
+const arrayLikeTitulos = document.getElementsByClassName('.titulo');
+const arrayTitulo = Array.from(arrayLikeTitulos);
+
+arrayTitulo.forEach(function(item){
+    //console.log(item);
+});
+
+
+//Outras formas de usar o forEach
+arrayTitulo.forEach((item) => {
+    console.log(item);
+});
+
+arrayTitulo.forEach(item => {
+    console.log(item);
+});
+
+arrayTitulo.forEach((item, index) => {
+    console.log(item, index);
+});
+
+let i = 0;
+arrayTitulo.forEach(() => {
+   return console.log(i++);
+});
+
+arrayTitulo.forEach(() => console.log(i++));
+
+arrayTitulo.forEach(() => i++);
+
+*/
+
+
+//EXERCÍCIOS DE FIXAÇÃO 
+
+//Motre no console cada parágrafo do site
+const todosParagrafosSite = document.querySelectorAll('p');
+todosParagrafosSite.forEach(item => console.log(item));
+
+//Mostre os textos dos parágrafos no console
+todosParagrafosSite.forEach(item => console.log(item.innerText));
+
+//Corrigir os erros abaixo:
+const imgs = document.querySelectorAll('img');
+
+//Erro: quando tem mais de um argumento precisa ficar entre parênteses
+imgs.forEach((item, index) => {
+  console.log(item, index);
+});
+
+//Erro: mesmo quando não tem agumento precisa ter os parênteses
+let i = 0;
+imgs.forEach(() => {
+  console.log(i++);
+});
+
+//Erro: não possui erro
+imgs.forEach(() => i++);
