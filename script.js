@@ -56,12 +56,13 @@ function initScrollSuave() {
         block: 'start',
       });
   
-      // forma alternativa
-      // const topo = section.offsetTop;
-      // window.scrollTo({
-      //   top: topo,
-      //   behavior: 'smooth',
-      // });
+      /*forma alternativa
+      const topo = section.offsetTop;
+      window.scrollTo({
+        top: topo,
+        behavior: 'smooth',
+      });*/
+      
     }
   
     linksInternos.forEach((link) => {
@@ -70,8 +71,33 @@ function initScrollSuave() {
   }
 
 
+//Configurando animação scroll
+function initAnimacaoScroll(){
+    const sections = document.querySelectorAll('.js-scroll');
+
+        if(sections.length > 0){
+        const percentualTela = window.innerHeight * 0.6;
+
+        function animaScroll(){
+            sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top - percentualTela;
+
+            if(sectionTop < 0)
+                    section.classList.add('ativo')
+            else
+                    section.classList.remove('ativo')
+
+            })
+        }
+
+        animaScroll();
+
+        window.addEventListener('scroll', animaScroll);
+    }
+}
 
 //Ativando funções
 navegacaoTab();
 accordionNav();
 initScrollSuave();
+initAnimacaoScroll();
