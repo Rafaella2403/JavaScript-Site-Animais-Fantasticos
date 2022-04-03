@@ -1,4 +1,4 @@
-/*//UTILIZANDO FOREACH
+//UTILIZANDO FOREACH
 
 const imagensSite = document.querySelectorAll('img');
 console.log(imagensSite);
@@ -41,8 +41,6 @@ arrayTitulo.forEach(() => {
 arrayTitulo.forEach(() => console.log(i++));
 
 arrayTitulo.forEach(() => i++);
-
-*/
 
 
 //EXERCÍCIOS DE FIXAÇÃO 
