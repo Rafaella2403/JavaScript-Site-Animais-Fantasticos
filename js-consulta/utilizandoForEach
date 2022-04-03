@@ -61,7 +61,7 @@ imgs.forEach((item, index) => {
 });
 
 //Erro: mesmo quando não tem agumento precisa ter os parênteses
-let i = 0;
+
 imgs.forEach(() => {
   console.log(i++);
 });
